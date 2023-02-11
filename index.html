@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurPASS</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="l-header">
+        <nav class="nav">
+            <div class="brand-logo">SecurPASS</div>
+            <ul class="nav__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="javascript:;" onclick="displayModal('modal-form');">Login</a></li>
+                <li><a href="javascript:;" onclick="displayModal('signup-form');">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div >
+        <div class="close-modal">
+            <i class='bx bx-window-close' class="close-icon"></i>
+        </div>
+        <!--Login Modal--> 
+        <div class="modal">
+            <form action="" class="modal-form"> 
+                <h2>Login</h2>
+                <input type="text" class="input-box" name="username" placeholder="Username">
+                <input type="email" class="input-box" name="email" placeholder="Email">
+                <input type="submit" class="input-box" name="submit" value="Login">
+            </form>
+        </div>
+        <!--SignUp Modal-->
+        <div class="signup-modal" id="signup">
+            <form action="" class="signup-form"> 
+                <h2>Sign Up</h2>
+                <input type="text" class="input-box" name="username" placeholder="Username">
+                <input type="email" class="input-box" name="email" placeholder="Email">
+                <input type="password" class="input-box" name="password" placeholder="Password">
+                <input type="password2" class="input-box" name="password2" placeholder="Confirm Password">
+                <input type="submit" class="input-box" name="submit" value="Register">
+            </form>
+        </div>
+        
+    </div>
+    <script src="main.js" defer></script>
+</body>
+<footer>
+    <a href="" class="footer-link">Link to Project</a>
+</footer>
+</html>
